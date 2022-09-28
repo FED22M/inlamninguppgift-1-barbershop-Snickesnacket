@@ -15,6 +15,9 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+
 }
 
 .title{
@@ -109,19 +112,24 @@ body{
 
 .services{
   background: rgb(191 146 91);
-  width: 100%;
+  max-width: 900px;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(4,25%);
+  grid-template-columns: 800px;
+  margin-left: 100px ;
+  margin-right: 100px;
 }
 
 .services > section{
+
 text-align: center;
-margin-top: 10px;
+padding: 20px;
+margin: 10px;
+border: 1px black;
 }
 
 .services img{
- border-radius: 300px;
+ border-radius: 50%;
  margin-top: -50px;
  margin-bottom: 10px;
 
@@ -135,7 +143,7 @@ margin-top: 10px;
  .services p{
   font-family: 'poppins' , sans-serif;
   color: white;
-  margin: 10px;
+  margin: 10px 100px 10px 100px;
  }
 
  /* About us section */
