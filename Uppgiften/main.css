@@ -18,8 +18,8 @@ body{
 }
 
 .title{
-  font-size: large;
-  margin-left: 10px;
+  font-size: 20px;
+  margin-left: 5px;
   display: inline-block;
   color: white;
   font-weight: 500;
@@ -44,7 +44,7 @@ body{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color:rgb(20 27 37);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -52,7 +52,7 @@ body{
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -66,7 +66,7 @@ body{
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: rgb(20 27 37);}
 
   
 .content_header{
@@ -78,9 +78,11 @@ body{
 
   position: absolute; /* tar ut från normalt dokument flöde och förlorar space runom texten */ 
 
-  left: 10%; /* placerar text 55% från vänster */ 
+  left: 5%; /* placerar text 55% från vänster */ 
 
   top: 25%; /* placerar text 25% från topp */ 
+
+  right: 10%;
 
   color: white; 
 }
@@ -88,7 +90,65 @@ body{
 .content_header, h2 { 
   font-family:'Barlow Semi Condensed' , sans-serif;
   color:rgb(191 146 91);
-  margin-bottom: 10px;
 }
 
- 
+.content_header .text_header .bodytext {
+  color: white;
+  font-family: 'poppins' , sans-serif;
+  margin-top: 30px;
+  margin-right: 50%;
+}
+
+.content_header .text_header span {
+  font-size: 45px;
+  
+}
+
+
+/* Service section */
+
+.services{
+  background: rgb(191 146 91);
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+}
+
+.services > section{
+text-align: center;
+margin-top: 10px;
+}
+
+.services img{
+ border-radius: 300px;
+ margin-top: -50px;
+ margin-bottom: 10px;
+
+}
+
+ .services h3{
+  font-family:'Barlow Semi Condensed' , sans-serif;
+  color: white;
+ }
+
+ .services p{
+  font-family: 'poppins' , sans-serif;
+  color: white;
+  margin: 10px;
+ }
+
+ /* About us section */
+
+.picture_about_us {
+  text-align: center;
+  position:relative
+}
+
+.about_us h2 {
+color: white;
+margin: 10px;
+font-family:'Barlow Semi Condensed' , sans-serif;
+text-align: center;
+
+}
