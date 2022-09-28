@@ -7,8 +7,6 @@
     <title>Barbershop</title>
 
     <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@800&family=Poppins:ital@1&display=swap"
       rel="stylesheet"
@@ -16,45 +14,55 @@
   </head>
   <body>
     <header>
-      <!-- banner img -->
-      <div class="banner_img">
-        <img
-          src="img_header.jpg"
-          alt="barbershop-image"
-          max-width="50%"
-          height="auto"
-        />
-        <!-- content within banner -->
-        <div class="container">
-          <div class="navbar">
-            <!-- title -->
-            <div class="title">
-              <h1>Barbershop</h1>
-            </div>
-            <!--  menu button  -->
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown</button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
+      <div class="nav_bar">
+        <!-- Headline -->
+        <div class="title">
+          <h1>Barbershop</h1>
+        </div>
+
+        <!-- Navigation Menu -->
+
+        <div class="dropdown">
+          <button class="dropbtn">MENU</button>
+          <div class="dropdown-content">
+            <a href="#">About us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Gallery</a>
+            <a href="#">Team</a>
+            <a href="#">Blogg</a>
+            <a href="#">Contact</a>
           </div>
-          <!-- text on banner -->
+        </div>
+      </div>
+
+      <div class="content_header">
+        <!-- picture -->
+        <div class="picture_header">
+          <img
+            src="img_header.jpg"
+            alt="barbershop-image"
+            width="100%"
+            height="auto"
+          />
+
+          <!-- text inside picture -->
           <div class="text_header">
-            <h2>Welcome to barbershop</h2>
-            <span> WE WILL MAKE YOUR STYLE OF YOUR DREAMDS</span>
-            <p>
+            <h2>WELCOME TO BARBERSHOP</h2>
+            <span
+              >WE WILL MAKE YOUR STYLE
+              <span class="Yourstyle">OF YOUR DREAMDS</span></span
+            >
+            <p class="undertext">
               A small river namned Duden flows by their place and supplies it
               with the necessary regelialia. It is a paradisematic country, in
               which roasted parts of sentences fly into your mouth.
             </p>
           </div>
-          <div>
-            <!-- button inside picture -->
-            <button type="button">Learn more about us</button>
-          </div>
+        </div>
+
+        <div class="header_button">
+          <!-- button inside picture -->
+          <button type="button">Learn more about us</button>
         </div>
       </div>
     </header>
