@@ -9,10 +9,13 @@ body{
   background-color: rgb(20 27 37) ;
 }
 
-.header{
+header{
   position: sticky;
   top:0;
+  z-index: 1000;
+  background-color: rgb(20 27 37) ;
 }
+
 
 /* HEADER */
 
@@ -76,6 +79,9 @@ body{
   
 .content_header{
   position: relative;
+  height: 100vh;
+  height: 100%;
+  object-fit: cover;
 }
 /* text i bannern, text_header-klassen är barn till content_header-föräldern  */ 
 
@@ -90,6 +96,8 @@ body{
   right: 10%;
 
   color: white; 
+
+  max-width: 70%;
 }
 
 .content_header, h2 { 
@@ -100,8 +108,8 @@ body{
 .content_header .text_header .bodytext {
   color: white;
   font-family: 'poppins' , sans-serif;
-  margin-top: 30px;
-  margin-right: 50%;
+  margin-top: 10px;
+  margin-right: 40%;
 }
 
 .content_header .text_header span {
@@ -114,27 +122,28 @@ body{
 
 .services{
   background: rgb(191 146 91);
-  max-width: 900px;
   height: auto;
-  display: grid;
-  grid-template-columns: 800px;
-  margin-left: 100px ;
-  margin-right: 100px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+flex-wrap: wrap;
 }
 
 .services > section{
-
 text-align: center;
-padding: 20px;
-margin: 10px;
-border: 1px black;
+padding:100px 20px 40px;
+position: relative;
+z-index: 100%;
+width: 50%;
+
 }
 
 .services img{
- border-radius: 50%;
- margin-top: -50px;
- margin-bottom: 10px;
-
+border-radius: 50%;
+position:absolute;
+width: 100px;
+left: calc(50% - 50px);
+top: -50px;
 }
 
  .services h3{
@@ -145,20 +154,74 @@ border: 1px black;
  .services p{
   font-family: 'poppins' , sans-serif;
   color: white;
-  margin: 10px 100px 10px 100px;
+  margin: 10px 100px 50px 100px;
  }
+
 
  /* About us section */
 
 .picture_about_us {
   text-align: center;
-  position:relative
+  position:relative;
+  object-fit: cover;
+  height: 100vh;
+  height: 100%;
 }
 
 .about_us h2 {
-color: white;
-margin: 10px;
+color: rgb(191 146 91);
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 5%;
 font-family:'Barlow Semi Condensed' , sans-serif;
-text-align: center;
+font-size: larger;
+height: auto;
+}
+.about_us span {
+  display: block;
+  color: white;
+margin-left: 5%;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.about_us p {
+color: white;
+margin-left: 5%;
+margin-right: 25%;
+line-height: 30px
+}
+
+.symbol {
+  background-color: rgb(191 146 91);
+  width: 150px;
+  border: 1px;
+  margin: 50px;
+  padding: 1px;
+  display: flex;
+flex-direction: row;
+
 
 }
+.symbol .cal_symbol {
+
+margin-top: 15px;
+display: inline-block;
+display: flex;
+}
+
+.symbol .text_symbol h2{
+font-size: 20px;
+color: white;
+margin-bottom: 5px;
+margin-top: 2px;
+margin-left: 10px;
+display: inline-block;
+}
+
+.symbol .text_symbol p{
+  line-height: 15px;
+  display: inline-block;
+  
+}
+
