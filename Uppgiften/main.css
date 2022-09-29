@@ -9,15 +9,17 @@ body{
   background-color: rgb(20 27 37) ;
 }
 
+.header{
+  position: sticky;
+  top:0;
+}
+
 /* HEADER */
 
 .nav_bar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-
 }
 
 .title{
