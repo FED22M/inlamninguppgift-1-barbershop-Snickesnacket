@@ -9,6 +9,13 @@ body{
   background-color: rgb(20 27 37) ;
 }
 
+h1, h2, h3 {
+  font-family:'Barlow Semi Condensed' , sans-serif;
+}
+p{
+  font-family: 'poppins' , sans-serif;
+}
+
 header{
   position: sticky;
   top:0;
@@ -101,13 +108,11 @@ header{
 }
 
 .content_header, h2 { 
-  font-family:'Barlow Semi Condensed' , sans-serif;
   color:rgb(191 146 91);
 }
 
 .content_header .text_header .bodytext {
   color: white;
-  font-family: 'poppins' , sans-serif;
   margin-top: 10px;
   margin-right: 40%;
 }
@@ -121,7 +126,7 @@ header{
 /* Service section */
 
 .services{
-  background: rgb(191 146 91);
+  background-color: rgb(191 146 91);
   height: auto;
   display: flex;
   margin-left: auto;
@@ -130,14 +135,18 @@ flex-wrap: wrap;
 }
 
 .services > section{
-text-align: center;
-padding:100px 20px 40px;
 position: relative;
-z-index: 100%;
 width: 50%;
-
+border: solid white;
 }
 
+.Hair_styles {
+  background-color: rgb(227, 170, 100);
+}
+
+.Hair_schampoo {
+  background-color: rgb(227, 170, 100);
+}
 .services img{
 border-radius: 50%;
 position:absolute;
@@ -149,13 +158,16 @@ top: -50px;
  .services h3{
   font-family:'Barlow Semi Condensed' , sans-serif;
   color: white;
+  text-align: center;
+  margin-top: 60px;
  }
 
  .services p{
-  font-family: 'poppins' , sans-serif;
   color: white;
   margin: 10px 100px 50px 100px;
+  text-align: center;
  }
+ 
 
 
  /* About us section */
@@ -189,7 +201,8 @@ margin-left: 5%;
 color: white;
 margin-left: 5%;
 margin-right: 25%;
-line-height: 30px
+line-height: 30px;
+font-family:'poppins' , sans-serif;
 }
 
 .symbol {
@@ -200,9 +213,8 @@ line-height: 30px
   padding: 1px;
   display: flex;
 flex-direction: row;
-
-
 }
+
 .symbol .cal_symbol {
 
 margin-top: 15px;
@@ -224,4 +236,99 @@ display: inline-block;
   display: inline-block;
   
 }
+/* PHOTO BEFORE REVIEW SECTION */
 
+.Review_img {
+  text-align: center;
+  position:relative;
+  object-fit: cover;
+  height: 100vh;
+  height: 100%;
+}
+/* REVIEW SECTION */
+
+.reviews{
+  text-align: center;
+  
+}
+.reviews h2 {
+    color: rgb(191 146 91);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .reviews span {
+    color: white;
+    font-size: 20px;
+  }
+  .review_box {
+    background-color: white;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction:column;
+  }
+
+  .review_text p {
+    display: flex;
+    color: black;
+  }
+
+  .cutsomer {
+    display: flex;
+    border-radius: 80%;
+  }
+
+  .five_star{
+    width: 10px;
+    height: 10px;
+  }
+  /* FOOTER SECTION */
+
+  .footer_nav {
+    background-color: #464646;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+
+  .footer_nav > div{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer_nav a{
+      text-decoration: none;
+      color: lightslategray;
+  }
+
+  .footer_nav li, h2{
+    margin: 10px;
+}
+
+.footer_nav1 {
+  background-color: #464646;
+  height: auto;
+}
+
+.box1 > div {
+  background-color: black;
+  display: inline-block;
+  margin: 15px;
+  border-radius: 50%;
+  padding: 15px;
+
+}
+
+.box4 li{
+ padding-top: 5px;
+}
