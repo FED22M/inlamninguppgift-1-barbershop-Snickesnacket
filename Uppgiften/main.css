@@ -127,17 +127,14 @@ header{
 
 .services{
   background-color: rgb(191 146 91);
-  height: auto;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .services > section{
-position: relative;
-width: 50%;
-border: solid white;
+  position: relative;
+  border: solid white;
+  width: 50%;
 }
 
 .Hair_styles {
@@ -148,24 +145,24 @@ border: solid white;
   background-color: rgb(227, 170, 100);
 }
 .services img{
-border-radius: 50%;
-position:absolute;
-width: 100px;
-left: calc(50% - 50px);
-top: -50px;
+  border-radius: 50%;
+  position:absolute;
+  width: 100px;
+  left: calc(50% - 50px);
+  top: -50px;
 }
 
  .services h3{
-  font-family:'Barlow Semi Condensed' , sans-serif;
-  color: white;
-  text-align: center;
-  margin-top: 60px;
+    font-family:'Barlow Semi Condensed' , sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
  }
 
  .services p{
-  color: white;
-  margin: 10px 100px 50px 100px;
-  text-align: center;
+    color: white;
+    margin: 10px 100px 50px 100px;
+    text-align: center;
  }
  
 
@@ -181,28 +178,28 @@ top: -50px;
 }
 
 .about_us h2 {
-color: rgb(191 146 91);
-margin-top: 30px;
-margin-bottom: 30px;
-margin-left: 5%;
-font-family:'Barlow Semi Condensed' , sans-serif;
-font-size: larger;
-height: auto;
+  color: rgb(191 146 91);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  font-family:'Barlow Semi Condensed' , sans-serif;
+  font-size: larger;
+  height: auto;
 }
 .about_us span {
   display: block;
   color: white;
-margin-left: 5%;
+  margin-left: 5%;
   font-size: 20px;
   margin-bottom: 30px;
 }
 
 .about_us p {
-color: white;
-margin-left: 5%;
-margin-right: 25%;
-line-height: 30px;
-font-family:'poppins' , sans-serif;
+  color: white;
+  margin-left: 5%;
+  margin-right: 25%;
+  line-height: 30px;
+  font-family:'poppins' , sans-serif;
 }
 
 .symbol {
@@ -217,18 +214,18 @@ flex-direction: row;
 
 .symbol .cal_symbol {
 
-margin-top: 15px;
-display: inline-block;
-display: flex;
+  margin-top: 15px;
+  display: inline-block;
+  display: flex;
 }
 
 .symbol .text_symbol h2{
-font-size: 20px;
-color: white;
-margin-bottom: 5px;
-margin-top: 2px;
-margin-left: 10px;
-display: inline-block;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 2px;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .symbol .text_symbol p{
@@ -247,35 +244,51 @@ display: inline-block;
 }
 /* REVIEW SECTION */
 
-.reviews{
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   text-align: center;
-  
+  flex-direction: column;
 }
+
 .reviews h2 {
     color: rgb(191 146 91);
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
-  .reviews span {
+  .review_titles span {
     color: white;
     font-size: 20px;
+    display: block;
   }
-  .review_box {
+  .review_box{
     background-color: white;
-    width: 150px;
     border-radius: 5px;
     margin-bottom: 30px;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     flex-direction:column;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    position: relative;
+  }
+
+  .quotation {
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(191 146 91);
+    position: absolute;
+    margin: -5px;
   }
 
   .review_text p {
     display: flex;
     color: black;
+    margin-top: 20px;
+
   }
 
   .cutsomer {
@@ -283,9 +296,27 @@ display: inline-block;
     border-radius: 80%;
   }
 
+  .reviewer{
+    display: flex;
+    margin: 10px;
+  }
+
+  .star_container{
+    display: block; 
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
   .five_star{
     width: 10px;
     height: 10px;
+  }
+
+  .Review_customer {
+    color: black;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
   /* FOOTER SECTION */
 
@@ -306,13 +337,13 @@ display: inline-block;
     justify-content: space-evenly;
   }
 
-  .footer_nav a{
-      text-decoration: none;
-      color: lightslategray;
-  }
+.footer_nav a{
+  text-decoration: none;
+  color: lightslategray;
+}
 
-  .footer_nav li, h2{
-    margin: 10px;
+.footer_nav li, h2{
+  margin: 10px;
 }
 
 .footer_nav1 {
@@ -331,4 +362,37 @@ display: inline-block;
 
 .box4 li{
  padding-top: 5px;
+}
+
+@media screen and (min-width: 1100px) {
+header{
+  position: sticky;
+  top:0;
+  z-index: 1000;
+  background-color: rgb(20 27 37/0.5) ;
+}
+
+/* SERVICES  */
+
+.services > section{
+  position: relative;
+  width: 25%;
+  border: solid white;
+  }
+
+  /* REVIEWS */
+ 
+.reviews {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.review_titles{
+  justify-content: center;
+  width: 100%;
+}
+
+.reviews .review_box {
+  width: 25%;
+}
 }
