@@ -123,6 +123,25 @@ header{
   
 }
 
+.learnmore {
+
+  background-color: rgba (255, 255, 255, .2);
+
+  border: 1px solid white; 
+
+  height: fit-content;
+
+  width: fit-content;
+
+  padding: 10px;
+
+  display: inline-block; 
+
+  text-decoration: none;
+
+  float: leftt;
+
+}
 
 /* Service section */
 
