@@ -98,26 +98,27 @@ header{
 
   left: 5%; /* placerar text 55% från vänster */ 
 
-  top: 25%; /* placerar text 25% från topp */ 
+  top: 5%; /* placerar text 25% från topp */ 
 
   right: 10%;
 
   color: white; 
 
   max-width: 70%;
+  
 }
 
 .content_header, h2 { 
   color:rgb(191 146 91);
 }
 
-.content_header .text_header .bodytext {
+.text_header p {
   color: white;
   margin-top: 10px;
   margin-right: 40%;
 }
 
-.content_header .text_header span {
+.text_header span {
   font-size: 45px;
   
 }
@@ -372,6 +373,19 @@ header{
   background-color: rgb(20 27 37/0.5) ;
 }
 
+.content_header .text_header { 
+
+  position: absolute; /* tar ut från normalt dokument flöde och förlorar space runom texten */ 
+
+  left: 10%; /* placerar text 55% från vänster */ 
+
+  top: 20%; /* placerar text 25% från topp */ 
+
+  right: 15%;
+
+  color: white; 
+  
+}
 /* SERVICES  */
 
 .services > section{
